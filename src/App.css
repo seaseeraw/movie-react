@@ -1,0 +1,34 @@
+.wrapper{
+  background-color: rgb(126, 114, 114);
+  min-height: 100vh;
+}
+nav{
+  background: rgba(181, 55, 55, 0.416);
+}
+.hero{
+  position: relative;
+  min-height: 80vh;
+}
+.hero-content{
+max-width: 450px;
+}
+
+/* card */
+.movie-card-item{
+  background: rgba(255, 255, 255, 0.184);
+  backdrop-filter: blur(5px);
+
+}
+.movie-card-item img{
+width:100%;
+height: auto;
+}
+@media(max-width: 768px){
+  .movie-card-item img{
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
+
+
+/* end-card */
