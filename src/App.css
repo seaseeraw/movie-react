@@ -1,4 +1,4 @@
-.wrapper{
+/* .wrapper{
   background-color: rgb(126, 114, 114);
   min-height: 100vh;
 }
@@ -14,9 +14,10 @@ max-width: 450px;
 }
 
 /* card */
-.movie-card-item{
+/* .movie-card-item{
   background: rgba(255, 255, 255, 0.184);
   backdrop-filter: blur(5px);
+  max-width: 450px;
 
 }
 .movie-card-item img{
@@ -26,6 +27,79 @@ height: auto;
 @media(max-width: 768px){
   .movie-card-item img{
     max-height: 200px;
+    object-fit: cover;
+  }
+} */ 
+body {
+  margin: 0;
+  /* display: flex; */
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+.wrapper {
+  background-color: rgb(71, 71, 71);
+  min-height: 100vh;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.47);
+}
+
+.hero {
+  position: relative;
+  min-height: 80vh;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.583);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-content {
+  max-width: 450px;
+  z-index: 2;
+}
+
+/* form  */
+
+/* .form-center {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+.form-top {
+  position: absolute;
+  top: 15%;
+  width: 450px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+} */
+
+/* end form  */
+
+/* Card  */
+.movie-card-item {
+  background: rgba(255, 255, 255, 0.468);
+  backdrop-filter: blur(5px);
+  max-width: 450px;
+}
+
+.movie-card-item img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .movie-card-item img {
+    max-height: 220px;
     object-fit: cover;
   }
 }
